@@ -1,5 +1,5 @@
 Clean Zombie Users
-Version 0.4b (beta)
+Version 0.4c (beta)
 ==================
 
 If you have a WordPress site with lots spammer registrations, this plugin will delete any user who has never had a post or comment approved. Zombie Users... BRAAAAINS.
@@ -9,7 +9,7 @@ Included Features:
 * Target specific user roles for deletion based on whether they have ever posted or commented
 * Includes a test mode to see what the results will be
 * Includes the ability to delete users in chunks, for large sites.
-* We don't need to validate boolean values on checkboxes/radios but will do it just to be OCD
+* Need to significantly improve form validation
 
 To Do:
 
@@ -17,6 +17,10 @@ To Do:
 * Build in logic for all major e-commerce plugins
 
 *** CHANGELOG ***
+
+Version 0.4c (beta)
+* Broke up the plugin into smaller files for greater readability
+* Properly enqueued styles & scripts
 
 Version 0.4b (beta)
 * Fixed the undefined index in dynamic variables on lines 71 and 72.

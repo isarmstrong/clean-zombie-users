@@ -1,0 +1,23 @@
+#clean-wrap {
+    max-width: 800px;
+    overflow: hidden;
+}
+
+#clean-wrap h2 {
+    font-family: Oswald, Arial, Helvetica, arial, sans-serif;
+    border-bottom: 1px solid rgb(20, 20, 20);
+    font-size: 20px;
+    line-height: 22px;
+}
+
+#the-options {
+    padding: 0 0 15px 12px;
+}
+
+#the-options input[name=include-administrator] {
+    background: silver;
+}
+
+.testlist li {
+    margin-left: 20px;
+}
