@@ -18,6 +18,9 @@ To Do:
 
 *** CHANGELOG ***
 
+Version 0.4d (beta)
+* Properly sanitized the text field for limiting results
+
 Version 0.4c (beta)
 * Broke up the plugin into smaller files for greater readability
 * Properly enqueued styles & scripts
