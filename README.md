@@ -9,7 +9,9 @@ Included Features:
 * Target specific user roles for deletion based on whether they have ever posted or commented
 * Includes a test mode to see what the results will be
 * Includes the ability to delete users in chunks, for large sites.
-* Need to significantly improve form validation
+* Need to continue improving form sanitization
+* Need to make the entire introductory message change after a post
+* Need to put the deleted users list into a scrolling DIV
 
 To Do:
 
