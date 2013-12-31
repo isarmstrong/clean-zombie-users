@@ -277,11 +277,9 @@ function braaains_options_page()
                 install. If you do not know how to back up and restore a database, the author of this plugin makes
                 no implied warranty against catastrophic failure.</p>
 
-            <p><em>Be advised that this plugin has not been tested with e-commerce plugins in WordPress. DO NOT use this
-                    on a commerce site or you may delete customers who have not technically commented on a blog entry
-                    or written a post. It may see purchases as posts, it probably won't. DO NOT TOUCH THE DELETE BUTTON!</em></p>
+            <p style="color: #c2403a;"><em><strong>DO NOT use this on a commerce site or you may delete customers</strong> who have not technically commented on a blog entry or written a post.</em></p>
 
-            <p>In order to proceed, please confirm the following:</p>
+            <h2>Set Plugin Run Mode</h2>
 
             <p>
                 <input type="radio" name="operation" checked="checked" value="test">This is just a test run, list the
@@ -302,9 +300,7 @@ function braaains_options_page()
                 </li>
             </ul>
 
-            <p>Do you have a slow database? If so, you may want to do this in chunks. You can limit the number of
-                results processed
-                at once with this setting. Highly recommended for the actual deletion, up to you for testing.</p>
+            <p>Do you have a slow database? If so, you may want to do this in chunks. You can limit the number of results processed at once with this setting. Highly recommended for the actual deletion, up to you for testing.</p>
             <ul>
                 <li><input type="radio" name="limiter" checked="checked" value="unlimited">Run the entire query at once
                     (ok for small sites)<br></li>
@@ -344,11 +340,7 @@ function braaains_options_page()
         </form>
 
         <h2>Author Security Check</h2>
-
-        <p>If an author with no posts shows up here, it means they have active revisions. Often this is your webmaster
-            but
-            sometimes it's a hack that didn't work. Make sure everyone on this list is authorized and delete any mystery
-            authors!</p>
+        <p>If an author with no posts shows up here, it means they have active revisions. Often this is your webmaster but sometimes it's a SQL injection or administrative error. Make sure everyone on this list is authorized and delete/modify any mystery authors!</p>
 
         <ol><?php
             foreach ($authorlist as $u) {
