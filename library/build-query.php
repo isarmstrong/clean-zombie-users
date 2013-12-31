@@ -72,9 +72,15 @@ if (isset($_POST['page_updated'])) { // if the post has been updated
     $limited = $_POST['limiter'];
     if ($limited == 'limited') {
         $chunk_size = mysql_real_escape_string($_POST['thelimit']);
-        $limiter = "LIMIT 0, " . $chunk_size;
+        if (is_int($chunk_size)) {
+            $limiter = "LIMIT 0, " . $chunk_size;
+        } else {
+            die("The Zombies ate your brains! (this field can only be a number)");
+        }
     }
-    if (empty($limiter)) { $limiter = "";}
+    if (empty($limiter)) {
+        $limiter = "";
+    }
 
     // Build our SQL statement for the operation
     $mainquery = "

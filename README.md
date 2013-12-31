@@ -1,5 +1,5 @@
 Clean Zombie Users
-Version 0.4c (beta)
+Version 0.4d (beta)
 ==================
 
 If you have a WordPress site with lots spammer registrations, this plugin will delete any user who has never had a post or comment approved. Zombie Users... BRAAAAINS.
