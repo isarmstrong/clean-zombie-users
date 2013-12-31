@@ -8,7 +8,7 @@ Version: 0.3
 Author URI: http://imperativeideas.com/
 */
 
-$braaains_version = '0.4b';
+$braaains_version = '0.4a';
 
 global $authorlist;
 
@@ -128,6 +128,7 @@ function braaains_options_page()
             $chunk_size = mysql_real_escape_string($_POST['thelimit']);
             $limiter = "LIMIT 0, " . $chunk_size;
         }
+        if (empty($limiter)) { $limiter = "";}
 
         // Build our SQL statement for the operation
         $mainquery = "
