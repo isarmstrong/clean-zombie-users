@@ -125,7 +125,7 @@ function braaains_options_page()
         /** Check to see if we are limiting the number of entries processed **/
         $limited = $_POST['limiter'];
         if ($limited == 'limited') {
-            $chunk_size = $_POST['thelimit'];
+            $chunk_size = mysql_real_escape_string($_POST['thelimit']);
             $limiter = "LIMIT 0, " . $chunk_size;
         }
 
