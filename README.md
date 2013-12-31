@@ -12,5 +12,7 @@ Included Features:
 
 To Do:
 
+* Fix deprecated has_cap notice
+* Fix undefined indexes in the dynamic variable on line 71
 * Allow newer users to be excluded
 * Build in logic for all major e-commerce plugins
