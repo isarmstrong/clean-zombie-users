@@ -9,6 +9,7 @@ Included Features:
 * Target specific user roles for deletion based on whether they have ever posted or commented
 * Includes a test mode to see what the results will be
 * Includes the ability to delete users in chunks, for large sites.
+* We don't need to validate boolean values on checkboxes/radios but will do it just to be OCD
 
 To Do:
 
