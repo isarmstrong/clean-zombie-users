@@ -4,11 +4,11 @@ Plugin Name: Clean Up Zombie Users
 Plugin URI: http://imperativeideas.com
 Description: If you have a WordPress site with lots spammer registrations, this plugin will delete any user who has never had a post or comment approved. Zombie Users... BRAAAAINS.
 Author: Imperative Ideas
-Version: 0.3
+Version: 0.4b
 Author URI: http://imperativeideas.com/
 */
 
-$braaains_version = '0.4a';
+$braaains_version = '0.4b';
 
 global $authorlist;
 
