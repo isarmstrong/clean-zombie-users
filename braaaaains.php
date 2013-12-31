@@ -366,26 +366,6 @@ function braaains_options_page()
             ?>
         </ol>
 
-        <h2>Commenter Emails</h2>
-
-        <?php
-
-        $emails = (array)$wpdb->get_results("
-            SELECT *
-            FROM smartx_comments
-            WHERE smartx_comments.comment_author is not NULL
-            GROUP BY comment_author_email
-        ", object);
-
-        echo "<ul>";
-        foreach ($emails as $email) {
-            echo "<li>" . $email->comment_author_email . "</li>";
-        }
-        echo "</ul>";
-
-        ?>
-
-
     </div>
 <?php
 }
