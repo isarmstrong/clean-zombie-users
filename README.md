@@ -2,7 +2,7 @@ Clean Zombie Users
 Version 0.4b (beta)
 ==================
 
-Damn zombie users! Always eating your MySQL database. This WordPress plugin cleans up all sorts of users, especially spammy ones. Braaaaaains. 
+If you have a WordPress site with lots spammer registrations, this plugin will delete any user who has never had a post or comment approved. Zombie Users... BRAAAAINS.
 
 Included Features:
 

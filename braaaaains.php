@@ -2,7 +2,7 @@
 /*
 Plugin Name: Clean Up Zombie Users
 Plugin URI: http://imperativeideas.com
-Description: Damn zombie users! Always eating your MySQL database. This plugin cleans up all sorts of users, especially spammy ones. Braaaaaains.
+Description: If you have a WordPress site with lots spammer registrations, this plugin will delete any user who has never had a post or comment approved. Zombie Users... BRAAAAINS.
 Author: Imperative Ideas
 Version: 0.3
 Author URI: http://imperativeideas.com/
