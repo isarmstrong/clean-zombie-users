@@ -1,5 +1,5 @@
 Clean Zombie Users
-Version 0.4 (beta)
+Version 0.4a (beta)
 ==================
 
 Damn zombie users! Always eating your MySQL database. This WordPress plugin cleans up all sorts of users, especially spammy ones. Braaaaaains. 
@@ -12,7 +12,11 @@ Included Features:
 
 To Do:
 
-* Fix deprecated has_cap notice
 * Fix undefined indexes in the dynamic variable on line 71
 * Allow newer users to be excluded
 * Build in logic for all major e-commerce plugins
+
+*** CHANGELOG ***
+
+Version 0.4a (beta)
+* Fixed the has_cap warning by changing "8" to "manage_options" in option page permissions

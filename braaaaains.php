@@ -8,14 +8,14 @@ Version: 0.3
 Author URI: http://imperativeideas.com/
 */
 
-$braaains_version = '0.4';
+$braaains_version = '0.4a';
 
 global $authorlist;
 
 function braaains_add_options_pages()
 {
     if (function_exists('add_options_page')) {
-        add_options_page("Clean Zombie Users", 'Clean Zombie Users', 8, __FILE__, 'braaains_options_page');
+        add_options_page("Clean Zombie Users", 'Clean Zombie Users', 'manage_options', __FILE__, 'braaains_options_page');
     }
 }
 
