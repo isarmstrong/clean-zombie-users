@@ -71,7 +71,7 @@ if (isset($_POST['page_updated'])) { // if the post has been updated
     /** Check to see if we are limiting the number of entries processed **/
     $limited = $_POST['limiter'];
     if ($limited == 'limited') {
-        $chunk_size = mysql_real_escape_string($_POST['thelimit']);
+        $chunk_size = (int)mysql_real_escape_string(trim($_POST['thelimit']));
         if (is_int($chunk_size)) {
             $limiter = "LIMIT 0, " . $chunk_size;
         } else {
