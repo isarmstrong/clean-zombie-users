@@ -67,10 +67,10 @@ function braaains_options_page()
         $theroles = ""; // initialize variable for SQL AND/OR string
         $role_options = array(); // initialize an array that fetches boolean options from the form
         foreach ($roles as $role) { // iterate over detected roles
-            $getcheck = "include-" . strtolower($role[name]); // get the role as a value that matches the form as a variable for complex inclusion
-            ${"include_" . strtolower($role[name])} = (bool)$_POST["{$getcheck}"]; // set a dynamic variable and check it against the submitted form
-            if (${"include_" . strtolower($role[name])}) { // if the matching role is checked in the form
-                $role_options[] = "$wpdb->usermeta.meta_value LIKE '%" . strtolower($role[name]) . "%' "; // generate an array of statements for inclusion
+            $getcheck = "include-" . strtolower($role['name']); // get the role as a value that matches the form as a variable for complex inclusion
+            ${"include_" . strtolower($role['name'])} = (bool)$_POST["{$getcheck}"]; // set a dynamic variable and check it against the submitted form
+            if (${"include_" . strtolower($role['name'])}) { // if the matching role is checked in the form
+                $role_options[] = "$wpdb->usermeta.meta_value LIKE '%" . strtolower($role['name']) . "%' "; // generate an array of statements for inclusion
             }
         }
 
@@ -277,8 +277,8 @@ function braaains_options_page()
                 no implied warranty against catastrophic failure.</p>
 
             <p><em>Be advised that this plugin has not been tested with e-commerce plugins in WordPress. DO NOT use this
-                on a commerce site or you may delete customers who have not technically commented on a blog entry
-                or written a post. It may see purchases as posts, it probably won't. DO NOT TOUCH THE DELETE BUTTON!</em></p>
+                    on a commerce site or you may delete customers who have not technically commented on a blog entry
+                    or written a post. It may see purchases as posts, it probably won't. DO NOT TOUCH THE DELETE BUTTON!</em></p>
 
             <p>In order to proceed, please confirm the following:</p>
 
@@ -323,8 +323,8 @@ function braaains_options_page()
                 <h3>Include the following user roles when cleaning up:</h3>
                 <?php
                 foreach ($roles as $role) {
-                    echo "<input type='checkbox' value='include-" . strtolower($role[name]) . "' name='include-" . strtolower($role[name]) . "' />";
-                    echo "<label name='include-" . strtolower($role[name]) . "' >" . $role[name] . "s</label><br/>";
+                    echo "<input type='checkbox' value='include-" . strtolower($role['name']) . "' name='include-" . strtolower($role['name']) . "' />";
+                    echo "<label name='include-" . strtolower($role['name']) . "' >" . $role['name'] . "s</label><br/>";
                 }
                 ?>
 
