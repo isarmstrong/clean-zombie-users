@@ -8,7 +8,7 @@ Version: 0.3
 Author URI: http://imperativeideas.com/
 */
 
-$braaains_version = '0.4a';
+$braaains_version = '0.4b';
 
 global $authorlist;
 

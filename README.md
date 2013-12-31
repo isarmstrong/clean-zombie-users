@@ -1,5 +1,5 @@
 Clean Zombie Users
-Version 0.4a (beta)
+Version 0.4b (beta)
 ==================
 
 Damn zombie users! Always eating your MySQL database. This WordPress plugin cleans up all sorts of users, especially spammy ones. Braaaaaains. 
