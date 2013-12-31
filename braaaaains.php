@@ -68,8 +68,8 @@ function braaains_options_page()
         $role_options = array(); // initialize an array that fetches boolean options from the form
         foreach ($roles as $role) { // iterate over detected roles
             $getcheck = "include-" . strtolower($role['name']); // get the role as a value that matches the form as a variable for complex inclusion
-            ${"include_" . strtolower($role['name'])} = (bool)$_POST["{$getcheck}"]; // set a dynamic variable and check it against the submitted form
-            if (${"include_" . strtolower($role['name'])}) { // if the matching role is checked in the form
+            if(isset($_POST["{$getcheck}"])) { ${"include_" . strtolower($role['name'])} = (bool)$_POST["{$getcheck}"]; } // set a dynamic variable and check it against the submitted form
+            if (isset(${"include_" . strtolower($role['name'])})) { // if the matching role is checked in the form
                 $role_options[] = "$wpdb->usermeta.meta_value LIKE '%" . strtolower($role['name']) . "%' "; // generate an array of statements for inclusion
             }
         }
@@ -210,17 +210,17 @@ function braaains_options_page()
             );
 
             // Hide the user limit field by default
-            confirmation = $('#userlimit');
-            confirmation.hide();
+            userlimit = $('#userlimit');
+            userlimit.hide();
 
             // Conditionally Show the user limit field
             $('input:radio[name="limiter"]').change(
                 function () {
                     if ($(this).is(':checked') && $(this).val() == 'unlimited') {
-                        confirmation.hide();
+                        userlimit.hide();
                     }
                     if ($(this).is(':checked') && $(this).val() == 'limited') {
-                        confirmation.show();
+                        userlimit.show();
                     }
                 }
             );
